@@ -59,6 +59,8 @@ body{
         object-fit: cover;
         background-size: cover;
         margin: auto;
+        display: flex;
+        flex-direction: column;
       
         
         scroll-behavior: smooth;
