@@ -77,7 +77,7 @@ body{
 
     
         width:100%;
-        max-height: 100px;
+        max-height: 300px;
         height:5vw;
         
         background: linear-gradient(269.58deg, #152651 18.23%, rgba(21, 38, 81, 0) 111.71%);
@@ -610,13 +610,14 @@ body{
 
 .bottom{
     width:100%;
-    
+    margin-top:5vw;
     height: 12vw;
     background-color: #0b083a;
     text-align: center;
     color:white;
     font-weight: 400;
-    position: relative;
+
+
     padding: auto;
    
 }
