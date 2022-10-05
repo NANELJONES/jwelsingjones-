@@ -10,12 +10,13 @@ html {
 body{
     background: linear-gradient(95.09deg, #0b083a -11.33%, rgba(207, 39, 230, 0) 154.85%);
     
-    background-image:url("jo1.png");
+    background-image:url("jo1.jpg");
         object-fit: cover;
         background-size: cover;
         margin: auto;
         overflow-y: scroll;
         position: relative;
+        
 
 }
 
@@ -33,7 +34,9 @@ body{
 
 .image_shower img {
     position: absolute;
-    width:100%;
+    left:50%;
+    transform: translateX(-50%);
+    width:85%;
     overflow-y: scroll;
 
 }
@@ -48,20 +51,22 @@ body{
 
 body{
     font-family: "Montserrat";
-    overflow-y: scroll;
+    overflow-y: auto;
 }
     .wrapper{
         width:95vw;
         
+        
         height: auto;
-        min-height: fit-content;
+        
         background-image:url("jo1.png");
         object-fit: cover;
         background-size: cover;
         margin: auto;
         display: flex;
         flex-direction: column;
-      
+        
+
         
         scroll-behavior: smooth;
         
@@ -470,10 +475,11 @@ body{
     margin-top: 9vw;
     width:100%;
 
-    max-height: 700px;
+    
     width: 100%;
    
     display: flex;
+    height: auto;
 }
 
 
@@ -491,7 +497,6 @@ body{
 .reach{
 
 
-   
    
     width:60%;
 }
@@ -820,10 +825,12 @@ body{
         margin: 19vw auto auto auto;
         flex-direction: column-reverse;
         width:90%
+        
     }
 
     .contact_left {
         width:100%;
+        height: auto;
     }
 
     .contact .contact_right{
