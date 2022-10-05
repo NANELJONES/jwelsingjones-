@@ -2,13 +2,7 @@
 <head>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-   
-   
-  
-
-    
-
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +17,7 @@
     
         <div  id= "image_shower" class="hide_img" onclick="hide_modal()">
             <img id = "viewer" src="1.jpg" alt="IMAGE COUDL NOT BE FOUND">
+            <video controls loop autoplay id="vid" controls src=""></video>
            
         </div>
         <div class="header">
@@ -41,15 +36,16 @@
 
         <div class="main_head" id="main_head">
             <div class="left">
-                <div class="first">
+                <div class="first"data-aos="zoom-in">
                     <h1>F</h1> 
                     <p>rontend</p>
                 </div>
-                <div class="las">
+                <div class="las" data-aos="zoom-in">
                     <h1 id="ux">&UX/UI</h1> 
                     <h3 id="developer">DEVELOPER</h3> 
 
-                    <p>My Name is Jojo Welsing-Jones and I am a Designer, Software Engineer and UX/UI Developer.I build creative designs forMy Name is Jojo Welsing-Jones and I am a Designer, Software Engineer and UX/UI Developer.I build creative designs for </p>
+                    <p>My Name is Jojo Welsing-Jones and I am a Designer, Software Engineer and UX/UI Developer.
+                        I build creative designs forMy Name is Jojo Welsing-Jones and I am a Designer, Software Engineer and UX/UI Developer.I build creative designs for </p>
                     
                     
 
@@ -60,13 +56,13 @@
 
             </div>
         
-            <div class="right">
+            <div class="right" data-aos="zoom-in">
                <img src="joe man.png" alt="jo1" onclick="showpicture('joe man.png')">
             </div>
         </div>
 
         <div class="about_me" id="about_me">
-            <div class="ab_left">
+            <div class="ab_left" data-aos="zoom-in">
                 <h1 id="ab_me">About</h1>
                 <h1 id="ab_me">Me</h1>
                 <img class ="abt_img1"src="Me.JPG" alt="">
@@ -77,7 +73,7 @@
             </div>
 
 
-            <div class="ab_right">
+            <div class="ab_right" data-aos="zoom-in">
                 <img class ="abt_img"src="Me.JPG" alt="">
             </div>
 
@@ -86,28 +82,39 @@
         </div>
 
         <div class="ux_ui" id="ux_ui">
-            <div class="ux_heading">
+            <div class="ux_heading"  data-aos="zoom-in">
                 <h1 >UX/UI</h1> 
                 <p>I am a creative designer and a creative advocate nd an intelligent oafnoenf 
                     I am I am a creative designer and a creative advocate nd an intelligent oafnoenf 
                      I amI am a creative designer and a creative advocate nd an intelligent oafnoenf I am </p>
             </div>
+            <ol data-aos="fade-up">
+                <li>Figma</li>
+                <li>Illustrator</li>
+                <li>Photoshop</li>
+                <li>After Effects(For Advanced UX and Motion Design)</li>
+                <li>Wireframing </li>
+                <li>Protyping</li>
+                
+                
+            </ol>
            
 
 
                 <div class="all_grid">
+                    <h1  data-aos="fade-up">PORTFOLIO</h1>
         
 
 
 
 
 
-                    <div class="grid_2">
+                    <div class="grid_2"  data-aos="fade-right">
                         <div class="item_1">
-                            <video controls loop autoplay src="FINAL PORTFOLIO/3D MODEL NEOMORPHISM.mp4"   alt="" onclick="showpicture('Compressed/Desktop---13.jpg')">
+                            <video controls loop autoplay src="Compressed/3D MODEL NEOMORPHISM.mp4"   alt="" onclick="showvideo('Compressed/3D MODEL NEOMORPHISM.mp4')">
                                
                             </div>
-                        <div class="item_2">
+                        <div class="item_2" >
                             <img src="Compressed/5.jpg" alt="" onclick="showpicture('Compressed/5.jpg')">
                         </div>
                         <div class="item_3">
@@ -120,9 +127,9 @@
                     </div>
 
 
-                    <div class="grid_2">
+                    <div class="grid_2" data-aos="fade-left">
                         <div class="item_1">
-                            <video controls loop autoplay  src="Compressed/Angel.MP4" onclick="showpicture('Compressed/Angel.MP4')">
+                            <video controls loop autoplay  src="Compressed/Angel.MP4" onclick="showvideo('Compressed/Angel.MP4')">
                                
                             </div>
                         <div class="item_2">
@@ -138,7 +145,7 @@
                     </div>
 
 
-                    <div class="grid_2">
+                    <div class="grid_2"  data-aos="fade-right">
                         <div class="item_1">
                           
                             <img src="Compressed/Desktop---6.jpg" alt="" onclick="showpicture('Compressed/Desktop---6.jpg')">
@@ -157,7 +164,7 @@
 
 
 
-                    <div class="grid_2">
+                    <div class="grid_2" data-aos="fade-left">
                         <div class="item_1">
                           
                             <img src="Compressed/Desktop---13.jpg" alt="" onclick="showpicture('Compressed/Desktop---13.jpg')">
@@ -175,7 +182,7 @@
                     </div>
 
                     
-                    <div class="grid_2">
+                    <div class="grid_2" data-aos="fade-right">
                         <div class="item_1">
                           
                             <img src="Compressed/Desktop---16.jpg" alt="" onclick="showpicture('Compressed/Desktop---16.jpg')">
@@ -194,7 +201,7 @@
 
 
 
-                    <div class="grid_2">
+                    <div class="grid_2" data-aos="fade-left">
 
 
                         <div class="item_1">
@@ -203,7 +210,7 @@
                                
                             </div>
                         <div class="item_2">
-                            <video controls   src="Compressed/ROCKSON.MP4" onclick="showpicture('Compressed/ROCKSON.MP4')">
+                            <video controls loop autoplay src="Compressed/ROCKSON.MP4" onclick="showvideo('Compressed/ROCKSON.MP4')">
                            
                         </div>
                         <div class="item_3">
@@ -217,10 +224,10 @@
 
 
 
-                    <div class="grid_2">
+                    <div class="grid_2" data-aos="fade-right">
                         <div class="item_1">
                            
-                            <video controls   src="Compressed/Yarash Web Design.mp4" onclick="showpicture('Compressed/Yarash Web Design.mp4')">
+                            <video controls loop autoplay   src="Compressed/Yarash Web Design.mp4" onclick="showvideo('Compressed/Yarash Web Design.mp4')">
                                
                             </div>
                         <div class="item_2">
@@ -237,7 +244,7 @@
                     </div>
                     
 
-                    <div class="grid_2">
+                    <div class="grid_2" data-aos="zoom-in">
                         <div class="item_1">
                            
                             <img src="Compressed/IOT-UI2.jpg" alt="" onclick="showpicture('Compressed/IOT-UI2.jpg')">
@@ -333,30 +340,69 @@
             <p>Developed By Jojo Welsing Jones <br>2022</p> 
         
         </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </div>
 
+
+
+
 <script>
+ 
+window.addEventListener("load", (event) => {
+        alert("Hey, Welcome. You Can Click On Any Image To View In Full")
+        
+    })
 
     window.addEventListener("scroll", (event) => {
         var scroll_var = this.screenY;
         
     })
     function showpicture(image_path){
+
+        var image_div = document.getElementById("image_shower");
+
+        image_div.classList.add("image_shower");
+        image_div.classList.remove("hide_img");
+        var element = document.getElementById("viewer");
+        var vid_div = document.getElementById("vid");
+        if(element.style.display== "none"){
+            element.style.display = "flex";
+
+        }
+
+
+        vid_div.style.display = "none"
+        element.src = image_path
+        element.style.position = "absolute";
+       element.style.marginTop = window.scrollY  + "px"
+
+
+    
+    }
+
+
+    function showvideo(image_video){
         
         var image_div = document.getElementById("image_shower");
         image_div.classList.remove("hide_img");
         image_div.classList.add("image_shower");
 
-        var element = document.getElementById("viewer");
-        element.src = image_path
+        var image_di = document.getElementById("viewer");
+        image_di.style.display = "none";
+
+        var element = document.getElementById("vid");
+        if(element.style.display== "none"){
+            element.style.display = "flex";
+
+        }
+        element.src = image_video
         element.style.position = "absolute";
-        
-       
-     
        element.style.marginTop = window.scrollY  + "px"
-
-        
-
 
         
     }

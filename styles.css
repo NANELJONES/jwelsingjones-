@@ -41,6 +41,15 @@ body{
 
 }
 
+.image_shower video {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width:85%;
+    overflow-y: scroll;
+
+}
+
 
 
 .hide_img{
@@ -66,7 +75,7 @@ body{
         display: flex;
         flex-direction: column;
         
-
+        overflow-x: hidden;
         
         scroll-behavior: smooth;
         
@@ -336,6 +345,48 @@ body{
         margin: 5% auto auto auto;
         
         position: relative;
+    }
+
+    .all_grid h1{
+        all:unset;
+        font-family: "Montserrat";
+        color: white;
+        font-size: 5vw;
+        font-weight: 1000;
+        margin-top:5vw;
+    }
+
+    .ux_ui ol {
+        all:unset;
+        color: white;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        font-size: 2vw;
+        align-items: flex-start;
+        flex-wrap: wrap;
+   
+       
+        height: auto;
+        gap:2.3vw;
+
+    }
+    .ux_ui ol li {
+        
+        font-size: "Monserrat";
+       
+        
+        width: auto;
+        
+    }
+
+    .ux_ui ol li::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: rgb(255, 217, 1); /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 2vw; /* Also needed for space (tweak if needed) */
+        margin-left: 1vw; 
     }
 
 
@@ -763,6 +814,28 @@ body{
 
     .ux_heading p{
         font-size: 3vw;
+    }
+
+
+
+
+
+    .ux_ui ol {
+    
+        color: white;
+
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        font-size: 3vw;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        
+       
+    
+        gap:2.3vw;
+
     }
 
     .las p{
