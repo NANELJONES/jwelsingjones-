@@ -11,6 +11,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,800;1,100;1,200;1,700;1,900&display=swap" rel="stylesheet">
     <title>jwelsingjones</title>
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("M32h6RRW5j_PWu3wU");
+    })();
+    </script>
+
+
+
+
+
+
+
 </head>
 <body>
     <div class="wrapper">
@@ -44,8 +61,8 @@
                     <h1 id="ux">&UX/UI</h1> 
                     <h3 id="developer">DEVELOPER</h3> 
 
-                    <p>My Name is Jojo Welsing-Jones and I am a Designer, Software Engineer and UX/UI Developer.
-                        I build creative designs forMy Name is Jojo Welsing-Jones and I am a Designer, Software Engineer and UX/UI Developer.I build creative designs for </p>
+                    <p>I am Jojo Welsing-Jones, A  FrontEnd Engineer and Senior UX/UI Developer. 
+                        I Create And Build Creative Designs, Websites, Apps And FrontEnd Interfaces For Any Software Related Projects.  </p>
                     
                     
 
@@ -67,7 +84,7 @@
                 <h1 id="ab_me">Me</h1>
                 <img class ="abt_img1"src="Me.JPG" alt="">
                 <div class="ab_info">
-                    <p>My name is Jojo Welsing Jone. I am a highly skilled and motivated frontend and ux/ui developer. I build highly effificent, UX and Ui interfaces for software and all platforms. Because of my broad skills in both design and develpoment, I have the capabilities to embark on projects right from the ideation stage to the developmental stages. <br>I have a Bachelor's Degree In Computer Science and I love to build new things</p>
+                    <p>My name is Jojo Welsing Jones. I am a highly skilled and motivated individual with a skill profeciency in the fields Design and Programming . I build both aesthetically pleasing and effificent UX/UI Designs and Frontends for software on all platforms(Web, Mobile and Desktop). Because of my broad skills in both design and develpoment, I have the capabilities to embark on projects right from the ideation stage to the developmental stages. <br>I have a Bachelor's Degree In Computer Science and I love building new things</p>
                     <a href="RESUME.pdf"><button> Download Resume  </button></a>
                 </div>
             </div>
@@ -84,10 +101,16 @@
         <div class="ux_ui" id="ux_ui">
             <div class="ux_heading"  data-aos="zoom-in">
                 <h1 >UX/UI</h1> 
-                <p>I am a creative designer and a creative advocate nd an intelligent oafnoenf 
-                    I am I am a creative designer and a creative advocate nd an intelligent oafnoenf 
-                     I amI am a creative designer and a creative advocate nd an intelligent oafnoenf I am </p>
+                <p>"Design is intelligence made visible." -- Alina Wheeler, authorm. <br> <br> 
+                    I design User Friendly, Aethetically Pleasing and Highly Functional User 
+                    Interfaces Which Encompasses All Functional And Non Functional 
+                    Features And Requirements From The Client Specifications.
+                     I Research, Develop, Engineer And Build User Interfaces. <br><br>
+                    With a background in Animation, 3D modeling and Design, I am able to create 
+                    design assets and animations which streamlines the development of UX/UI design workflow. 
+                    </p>
             </div>
+            <br>
             <ol data-aos="fade-up">
                 <li>Figma</li>
                 <li>Illustrator</li>
@@ -251,7 +274,7 @@
                                
                             </div>
                         <div class="item_2">
-                            <img src="Compressed/IOT-UI-3.jpg" alt="" onclick="showpicture('Compressed/IOT-UI-3.jpg')">
+                            <video controls loop autoplay   src="Compressed/3D LOGIN.mp4" onclick="showvideo('Compressed/3D LOGIN.mp4')">
                            
                         </div>
                         <div class="item_3">
@@ -291,19 +314,22 @@
                     </div>
 
                     <div class="info">
-                        <i class="fa-brands fa-instagram"></i>
-                    
-                        <p>jhay_vine</p>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/jojo-welsing-jones-a74007209/"><p>Jojo Welsing-Jones</p></a>
                     </div>
 
+
                     <div class="info">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <p>Jojo Welsing-Jones</p>
+                        <i class="fa-brands fa-instagram"></i>
+                    
+                       <a href="https://www.instagram.com/jhay_vine/?next=%2F"> <p>jhay_vine</p></a>
                     </div>
+
+
 
                     <div class="info">
                         <i class="fa-brands fa-tiktok"></i>
-                        <p>Jhay_Vine</p>
+                        <a href="https://www.tiktok.com/@jhay_vine?lang=en"><p>jhay_vine</p></a>
                     </div>
         
                 </div>
@@ -314,25 +340,31 @@
             <div class="contact_right">
                 <div class="inputbox">
                     <label for="">Your Name</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="sender_name">
                 </div>
 
                 <div class="inputbox">
                     <label for="">Choose Category</label>
-                    <input type="text" name="" id="">
+                    <select name="" id="option">
+                        <option value="op_ui">UX/UI Developer</option>
+                        <option value="op_fe">FrontEnd Developer</option>
+
+
+                    </select>
+                   
                 </div>
 
                 <div class="inputbox">
                     <label for="">Email</label>
-                    <input type="email" name="" id="">
+                    <input type="email" name="" id="sender_email">
                 </div>
 
                 <div class="inputbox">
                     <label for="">Message</label>
-                    <textarea id="txtarea" > YI</textarea>
+                    <textarea id="txtarea"  > </textarea>
                 </div>
 
-                <button class="send_message">SEND MESSAGE</button>
+                <button class="send_message" onclick="sendMail()">SEND MESSAGE</button>
 
             </div>
         </div>
@@ -349,9 +381,18 @@
     </div>
 
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("M32h6RRW5j_PWu3wU");
+    })();
+    </script>
 
 
 <script>
+    
  
 window.addEventListener("load", (event) => {
         alert("Hey, Welcome. You Can Click On Any Image To View In Full")
@@ -415,6 +456,34 @@ window.addEventListener("load", (event) => {
 
         
     }
+
+
+
+    function sendMail(){
+        alert("you are about to send a message")
+        var tempPar = {
+            from_name: document.getElementById("sender_name").value,
+            sender_name: document.getElementById("sender_name").value,
+            sender_email: document.getElementById("sender_email").value,
+            option: document.getElementById("option").value,
+            sender_message: document.getElementById("txtarea").value };
+
+            alert(tempPar)
+        emailjs.send( 'service_g2ycm5s', 'template_j2uxc38', tempPar)
+        .then(function(res) {
+            alert("Message Has Been Sent");
+            
+        }, function(error){
+            alert("FAILED",error)
+        })
+
+
+        window.location.reload;
+    }
+
+
+
+
 </script>
 
 </body>
