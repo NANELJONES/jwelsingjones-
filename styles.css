@@ -8,7 +8,7 @@ html {
     scroll-behavior: smooth;
   }
 body{
-    background: linear-gradient(95.09deg, #0b083a -11.33%, rgba(207, 39, 230, 0) 154.85%);
+    background: linear-gradient(95.09deg, #0b083a -11.33%, rgba(207, 39, 230, 0.95) 154.85%);
     
     background-image:url("jo1.jpg");
         object-fit: cover;
@@ -95,8 +95,9 @@ body{
         width:100%;
         max-height: 300px;
         height:5vw;
-        
-        background: linear-gradient(269.58deg, #152651 18.23%, rgba(21, 38, 81, 0) 111.71%);
+        position: fixed;
+        z-index: 4;
+        background: linear-gradient(269.58deg, #152651 18.23%, rgba(81, 21, 76, 0.8) 111.71%);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -143,6 +144,15 @@ body{
         color:white;
         text-decoration: none;
         font-family: "Montserrat";
+        transition: 1s ease;
+    }
+
+    a:hover{
+        transition:unset;
+        color:unset;
+        color:rgb(0, 255, 213);
+        font-weight: 600;
+        font-size: 1.5vw;
     }
 
     .main_head{
@@ -216,12 +226,23 @@ body{
     .left button{
         font-family: "Montserrat";
         font-weight: 400;
-    padding: 1vw 3vw;
+        height: 4vw;
+       width: 15vw;
         border: none;
-        font-size: 1.2vw ;
+        font-size: 1.5vw ;
+
         text-align: center;
     color:white;
     background: linear-gradient(95.09deg, #61FDF4 -11.33%, rgba(109, 159, 255, 0) 154.85%);
+ 
+    background: linear-gradient(95.09deg, #E94AA0 -11.33%, #1C41FF 154.85%);
+
+    /*
+
+    background: linear-gradient(95.09deg, #E94AA0 -11.33%, #1C41FF 154.85%);
+    */
+
+    box-shadow: 0px 9px 32px rgba(0, 0, 0, 0.13);
             
             }
             
@@ -263,13 +284,14 @@ body{
 
     .about_me button{
         font-family: "Montserrat";
-        font-weight: 500;
-    padding: 2% ;
+        font-weight: 400;
+    padding: 4% ;
         border: none;
-        font-size: 2vw ;
+        font-size: 1.5vw ;
         text-align: center;
     color:white;
     background: linear-gradient(95.09deg, #3ba09b -11.33%, rgba(109, 159, 255, 0) 154.85%);
+    background: linear-gradient(95.09deg, #E94AA0 -11.33%, #1C41FF 154.85%);
         margin-top:2%;
 }
 
@@ -571,6 +593,11 @@ body{
     color: #FFFFFF;
 
 }   
+.reach .info a:hover{
+    transition:unset;
+    transition:1s ease;
+    font-size: 1.5vw;
+}
 
 .contact .contact_right{
     width: 50%;
@@ -619,7 +646,7 @@ body{
 .inputbox input, select, option{
 
     border: none;
-    background: linear-gradient(268.05deg, rgba(255, 72, 83, 0.5) -4.92%, rgba(63, 15, 255, 0) 121.81%);
+    background: linear-gradient(268.05deg, rgba(255, 72, 83, 0.5) -4.92%, rgba(63, 15, 255, 0.6) 121.81%);
     
     border-radius: 3vw;
     font-family: 'Montserrat';
@@ -656,6 +683,8 @@ body{
     padding:2vw;
     border: none;
     background: linear-gradient(95.09deg, #1D85FF 0.09%, rgba(255, 75, 119, 0) 128.13%);
+    
+  
     filter: drop-shadow(-13px 7px 104px #4870FF);
     border-radius: 1vw;
     font-family: 'Montserrat';
@@ -696,14 +725,15 @@ body{
 
     
     .header{
+        position: fixed;
      
         flex-direction: column;
         justify-content: space-around;
    
         align-items: center;
-        height: auto;
+        height: 7vw;
         padding:0;
-
+        z-index: 10;
         
     }
 
@@ -712,33 +742,46 @@ body{
         margin-left: unset;
         margin: auto;
        padding:unset;
-        height: 50%;
+        height: 70%;
+       
        
         justify-content: space-evenly;
 
     }
     .logo{
+   
         
-
+        
+        padding: unset;;
         width: 100%;
-        height: auto;
-        margin:auto;
-        text-align: center;
+        height: 30%;
+        
+    
+      
+      
    
     }
 
     .logo p {
+        margin:unset;
         font-family: 'Petit Formal Script', cursive;
         text-align: center;
-
+        
         font-size: 2vw;
         color: rgb(255, 255, 255);
-
+        height: 100%;
     }
+
+    li {
+        all:unset;
+      
+        height: fit-content;
+    }   
 
     li a{
         width: fit-content;
         font-size: 2vw;
+        
       
     }
 
@@ -771,7 +814,8 @@ body{
     }
     .left button{
 
-        padding: 2vw 4vw;
+        height: 8vw;
+        width: 30vw;
         border: none;
         font-size: 3vw ;
       
@@ -941,7 +985,10 @@ body{
 
     .contact_left h1{
         font-size: 10vw;
+
     }
+   
+    
 
     .contact_right button{
         font-size: 2vw;
@@ -952,14 +999,19 @@ body{
     .reach{
         width: 100%;
         text-align: center;
+       
+        
     }
 
     .reach .info{
+       
         text-align: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        gap:1vw;
+        justify-content: center;
+        border-bottom: 2vw solid rgba(0, 0, 0, 0.13);
+       
         
     
         
@@ -970,6 +1022,7 @@ body{
         color: #FFFFFF;
     
     }   
+
 
     select , input{
         height: 10vw;
