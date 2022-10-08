@@ -81,6 +81,7 @@ body{
         
         position: relative;
         
+        
     
     
     }
@@ -92,7 +93,8 @@ body{
     .header{
 
     
-        width:100%;
+        width:95%;
+        
         max-height: 300px;
         height:5vw;
         position: fixed;
@@ -110,7 +112,7 @@ body{
         height: auto;
         display: flex;
         gap:2vw;
-        margin-right: 2vw;
+        margin-right: 3vw;
         align-items: center;
         
     
@@ -147,6 +149,12 @@ body{
         transition: 1s ease;
     }
 
+    a:active{
+        color:rgb(0, 255, 213);
+        font-weight: 600;
+        font-size: 2vw;
+    }
+
     a:hover{
         transition:unset;
         color:unset;
@@ -156,7 +164,7 @@ body{
     }
 
     .main_head{
-        margin-top:3vw;
+        margin-top:8vw;
         width:100%;
         height:auto;
         display: flex;
@@ -275,7 +283,7 @@ body{
         display: flex;
         justify-content: space-around;
         flex-direction: row-reverse;
-        gap:20px;
+        gap:3vw;
         margin-top:5%;
     
     
@@ -351,11 +359,10 @@ body{
         content: "";
         position: absolute;
         bottom:-4vw;
+        height: 2vw;
         width:30%;
         left:0;
-        
-        border: .7vw solid white;
-
+        background-color: #FFFFFF;
     }
     
  
@@ -723,15 +730,19 @@ body{
   
   @media(max-width:500px){
 
+    .wrapper{
+        width: 100vw;
+    }
     
     .header{
         position: fixed;
      
         flex-direction: column;
         justify-content: space-around;
-   
+        width: 100%;
+        gap:2vw;
         align-items: center;
-        height: 7vw;
+        height: 9vw;
         padding:0;
         z-index: 10;
         
@@ -999,6 +1010,7 @@ body{
     .reach{
         width: 100%;
         text-align: center;
+      
        
         
     }
