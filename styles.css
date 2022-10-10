@@ -149,7 +149,7 @@ body{
 
     a:active{
         color:rgb(0, 255, 213);
-        font-weight: 600;
+        font-weight: 800;
         font-size: 2vw;
     }
 
@@ -728,6 +728,17 @@ body{
   
   @media(max-width:500px){
 
+    a:hover{
+        all: unset;
+     color:rgb(0, 255, 213);;
+     font-weight: 600;
+    }
+
+    a:active{
+        color:rgb(0, 255, 213);;
+        font-size: 2vw;
+    }
+
     .wrapper{
         width: 100vw;
         overflow: hidden;
@@ -741,7 +752,7 @@ body{
         width: 100%;
         gap:2vw;
         align-items: center;
-        height: 9vw;
+        height: 12vw;
         padding:0;
         z-index: 10;
         
