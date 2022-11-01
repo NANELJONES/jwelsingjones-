@@ -84,8 +84,8 @@
                 <h1 id="ab_me">Me</h1>
                 <img class ="abt_img1"src="Me.JPG" alt="">
                 <div class="ab_info">
-                    <p>My name is Jojo Welsing Jones. I am a highly skilled and motivated individual with a skill proficiency in the fields Design and Programming . <br> <br>
-                         I build both aesthetically pleasing and effificent UX/UI Designs and Frontends for software on all platforms(Web, Mobile and Desktop).<br> Because of my broad skills in both design and develpoment, I have the capabilities to embark on projects right from the ideation stage to the developmental stages.
+                    <p>My name is Jojo Welsing-Jones. I am a highly skilled and motivated individual with a skill proficiency in the fields Design and Programming . <br> <br>
+                         I build both aesthetically pleasing and efficient UX/UI Designs and Front-Ends for software on all platforms(Web, Mobile and Desktop).<br> Because of my broad skills in both design and develpoment, I have the capabilities to embark on projects right from the ideation stage to the developmental stages.
                          <br> <br>I have a Bachelor's Degree In Computer Science and my skills involve Front-End Development, UX/UI Design, UX/UI Research, Product Design and Graphics Design.</p>
                     <a href="RESUME.pdf"><button> Download Resume  </button></a>
                 </div>
@@ -347,7 +347,7 @@
             <div class="contact_right">
                 <div class="inputbox">
                     <label for="">Your Name</label>
-                    <input type="text" name="" id="sender_name">
+                    <input type="text" name="" id="sender_name" >
                 </div>
 
                 <div class="inputbox">
@@ -363,12 +363,12 @@
 
                 <div class="inputbox">
                     <label for="">Email</label>
-                    <input type="email" name="" id="sender_email">
+                    <input type="email" name="" id="sender_email" >
                 </div>
 
                 <div class="inputbox">
                     <label for="">Message</label>
-                    <textarea id="txtarea"  > </textarea>
+                    <textarea id="txtarea"  required> </textarea>
                 </div>
 
                 <button class="send_message" onclick="sendMail()">SEND MESSAGE</button>
@@ -433,6 +433,8 @@ window.addEventListener("load", (event) => {
     
     }
 
+    
+
 
     function showvideo(image_video){
         
@@ -467,16 +469,27 @@ window.addEventListener("load", (event) => {
 
 
     function sendMail(){
-        alert("you are about to send a message")
+        alert("You are about to send a message")
         var tempPar = {
             from_name: document.getElementById("sender_name").value,
             sender_name: document.getElementById("sender_name").value,
             sender_email: document.getElementById("sender_email").value,
             option: document.getElementById("option").value,
-            sender_message: document.getElementById("txtarea").value };
+            sender_message: document.getElementById("txtarea").value
+         };
 
-            alert(tempPar)
-        emailjs.send( 'service_g2ycm5s', 'template_j2uxc38', tempPar)
+
+  
+      
+
+
+        if((tempPar.from_name== "") || (tempPar.sender_email== "") || (tempPar.sender_message == "")){
+            alert("Please Fill All Sections Of The Form")
+          
+        }else{
+          
+       
+            emailjs.send( 'service_g2ycm5s', 'template_j2uxc38', tempPar)
         .then(function(res) {
             alert("Message Has Been Sent");
             
@@ -486,6 +499,13 @@ window.addEventListener("load", (event) => {
 
 
         window.location.reload;
+    
+
+        }
+
+
+    
+ 
     }
 
 
