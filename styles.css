@@ -11,6 +11,7 @@ body{
     background-image:url("jo1.jpg");
         object-fit: cover;
         background-size: cover;
+       
         margin: auto;
         overflow-y: scroll;
         position: relative;
